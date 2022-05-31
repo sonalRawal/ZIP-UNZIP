@@ -1,12 +1,12 @@
 # ZIP and UNZIP folder using nodejs
 Repository for zip & unzip project
--first you need to project setup with package.json file.
--then install the package adm-zip using npm install this package helps to both zip and unzip folder .
+- first you need to project setup with package.json file.
+- then install the package adm-zip using npm install this package helps to both zip and unzip folder .
 - after installed you create first  createZip.js file then import this package ...
 ```
 const AdmZip = require("adm-zip");
 ```
-once you imported then create async function and then inside this function create one new object of your AdmZip so you can easily use this functionality  like that..
+- once you imported then create async function and then inside this function create one new object of your AdmZip so you can easily use this functionality  like that..
 ```
 async function createZipArchive() {
   const zip = new AdmZip();
@@ -21,7 +21,7 @@ async function createZipArchive() {
 
 createZipArchive();
 ```
--run the script on terminal 
+- run the script on terminal 
 ```
 node createZip.js
 ```
@@ -31,11 +31,11 @@ node createZip.js
 ```
 npm i path
 ```
-import in file unZip.js
+- import in file unZip.js
 ```
 const path = require("path");
 ```
-once you imported then create async function and then inside this function create one new object of your AdmZip so you can easily use this functionality  like that..
+- once you imported then create async function and then inside this function create one new object of your AdmZip so you can easily use this functionality  like that..
 ```
 async function extractArchive(filepath) {
   try {
