@@ -5,7 +5,7 @@ async function createZipArchive() {
 
   const outputFile = "converter.zip";
 
-  zip.addLocalFolder("./converter");
+  zip.addLocalFolder("./converter");   // put your local folder path you want to zip them 
   
   zip.writeZip(outputFile);
   console.log(`Created ${outputFile} successfully`);
